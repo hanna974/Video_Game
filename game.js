@@ -37,6 +37,12 @@ let classIcon2 = document.getElementsByClassName("icon-2");
 let classIcon3 = document.getElementsByClassName("icon-3");
 /** ??? */
 
+const audioObject = new Audio(
+  "/NOMELODY_2019-10-13_-_The_Biggest_Smile_-_David_Fesliyan.mp3"
+);
+audioObject.play();
+audioObject.loop = true;
+
 function printMinutes() {
   let minutes = timer.getMinutes();
   let twoDigitsMinute = timer.twoDigitsNumber(minutes);
