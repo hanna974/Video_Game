@@ -1,40 +1,48 @@
 .container {
+    width: 100vw;
     display: flex;
-    align-items: space-between;
-    justify-content: center;
+    background: linear-gradient(rgb(197, 235, 240), white);
 }
 
 .image {
     height: 700px;
     width: 800px;
+    display: block;
+    margin-left: 200px;
+    margin-right: auto;
 }
 
-.homepage-btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#picture-barista {
+/* #picture-barista {
     width: 250px;
     height: 250px;
     border-radius: 100%;
     margin-bottom: 70px;
-}
+} */
 
 #start-game {
-    background: lightseagreen;
-    border: none;
-    color: whitesmoke;
-    font-size: 30px;
+    margin: 500px 500px 100px 100px;
+    color: orangered;
+    font-family: serif;
+    font-size: 50px;
     text-decoration: none;
-    width: 200px;
-    padding: 5px;
-    text-align: center;
-    border-radius: 10px 10px / 10px 10px;
-    margin: 10px 0px;
+    margin: 420px 0px 0px 30px;
+    animation: Test 1s infinite;
 }
+
+@keyframes Test {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 
 header {
     margin: 20px;
@@ -56,20 +64,6 @@ header {
     color: darkred;
 }
 
-.coffee-illustration {
-    width: 500px;
-    height: 450px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin-left: 10px;
-}
-
-.coffee-image {
-    height: 440px;
-    width: 630px;
-}
-
 main {
     display: flex;
     justify-content: space-evenly;
@@ -79,14 +73,22 @@ main {
 .wrap {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     height: 550px;
     width: 600px;
 }
 
-.game-area {
-    display: flex;
+.coffee-illustration {
+    width: 600px;
+    height: 450px;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
+    display: flex;
+}
+
+.coffee-image {
+    height: 440px;
+    width: 630px;
 }
 
 #item-list {
@@ -96,11 +98,20 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-left: 30px;
 }
 
 .fas {
     padding: 7px;
 }
+
+.game-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 
 #proposition {
     border: 1px black solid;
@@ -144,4 +155,41 @@ main {
     padding: 60px;
     color: white;
     font-size: 17px;
+}
+
+.result-background {
+    background: linear-gradient(rgb(197, 235, 240), white);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-recap {
+    font-size: 1.5rem;
+    width: 280px;
+}
+
+.score-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.time-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#replay {
+    background: orangered;
+    color: white;
+    border: 3px white solid;
+    height: 60px;
+    width: 120px;
+    font-size: 1.5rem;
+    margin-top: 50px;
+    margin-left: 100px;
+    border-radius: 10px 10px / 10px 10px;
 }
