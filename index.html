@@ -5,68 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Coffee shop</title>
+    <title>Home</title>
     <link rel="stylesheet" href="./styling.css">
-    <script type="module" src="./game.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <script type="module" src="./homepage.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="timer">
-            <span id="minDec" class="number">0</span>
-            <span id="minUni" class="number">0</span>
-            <span>:</span>
-            <span id="secDec" class="number">0</span>
-            <span id="secUni" class="number">0</span>
-        </div>
-        <div class="life-bar">
-            <span class="life fas fa-heart"></span>
-            <span class="life fas fa-heart"></span>
-            <span class="life fas fa-heart"></span>
-        </div>
-        <div class="counter-success">score : <span id="counter">0</span>
-        </div>
-    </header>
-    <main>
-        <div class="order-div">
-            <h2>Orders</h2>
-            <ol id="order-list">
-            </ol>
-        </div>
-        <div class="wrap">
-            <div class="coffee-illustration">
-                <img class="coffee-image" src="interior-3.png" usemap="#image-map" alt="coffee-interior">
-                <map name="image-map">
-                    <area target="_self" alt="coffee-interior" title="Customer 1" href="" coords="209,50,294,260"
-                        shape="rect">
-                    <area target="_self" alt="coffee-interior" title="Customer 2" href="" coords="445,56,540,255"
-                        shape="rect">
-                    <area target="_self" alt="coffee-interior" title="Customer 3" href="" coords="72,248,179,420"
-                        shape="rect">
-                    <area target="_self" alt="coffee-interior" title="Customer 4" href="" coords="430,190,306,420"
-                        shape="rect">
-                    <area target="_self" alt="coffee-interior" title="Customer 5" href="" coords="450,250,610,420"
-                        shape="rect">
-                </map>
-                <div id="item-list">
-                    <span class="fas fa-coffee"></span>
-                    <span class="fas fa-cookie"></span>
-                    <span class="fas fa-ice-cream"></span>
-                    <span class="fas fa-beer"></span>
-                    <span class="fas fa-hamburger"></span>
-                </div>
-            </div>
-            <div class="game-area">
-                <div id="proposition">
-                </div>
-                <button id="btn-serve">OK</button>
-                <button id="btn-delete">Delete</button>
-            </div>
-        </div>
-    </main>
-
-
+    <div class="container">
+        <div class="homepage-image"><img class="image" src="devanture.png" alt="img-devanture"></div>
+        <a id="start-game" href="index1.html">START <br> GAME </a>
+    </div>
 </body>
 
 </html>
