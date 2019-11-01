@@ -220,6 +220,3 @@ function check() {
 document.getElementById("btn-serve").addEventListener("click", check);
 
 startGame();
-
-// A faire  :
-// Ajouter audio
