@@ -139,7 +139,7 @@ main {
 }
 
 .order-div {
-    background-image: url(/ardoise.png);
+    background-image: url(./ardoise.png);
     height: 430px;
     width: 250px;
     justify-content: center;
