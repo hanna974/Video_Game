@@ -88,7 +88,9 @@ function stopGame() {
   clearInterval(interval);
   const finalTime = timer.getMinutes() + ":" + timer.getSeconds();
   stopTimer();
-  window.location.replace(`/results.html?score=${counter}&time=${finalTime}`);
+  window.location.replace(
+    `/Video_Game/results.html?score=${counter}&time=${finalTime}`
+  );
   // const res = prompt("game over ! play again (y/n");
   // if (res === "y") return startGame();
   // else return;
